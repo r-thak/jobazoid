@@ -1,0 +1,29 @@
+{
+    "name": "Java Spring & Runtime-Free Frontend",
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "workspaceFolder": "/workspaces/rthak",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "17",
+            "installMaven": "true",
+            "installGradle": "true"
+        },
+        "ghcr.io/devcontainers/features/postgres:1": {
+            "version": "latest"
+        }
+    },
+    "postCreateCommand": "cd /workspaces/rthak",
+    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vmware.vscode-spring-boot-dashboard",
+                "vscjava.vscode-spring-boot-extension-pack",
+                "vscjava.vscode-spring-initializr",
+                "dsznajder.es7-react-js-snippets"
+            ]
+        }
+    },
+    "forwardPorts": [8080, 5432]
+}
