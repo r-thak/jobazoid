@@ -1,7 +1,7 @@
 {
     "name": "Java Spring & Runtime-Free Frontend",
     "image": "mcr.microsoft.com/devcontainers/base:debian",
-    "workspaceFolder": "/workspaces/rthak",
+    "workspaceFolder": "/workspaces/jzoid",
     "features": {
         "ghcr.io/devcontainers/features/java:1": {
             "version": "17",
@@ -9,7 +9,7 @@
             "installGradle": "true"
         }
     },
-    "postCreateCommand": "cd /workspaces/rthak",
+    "postCreateCommand": "cd /workspaces/jzoid",
     "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
     "customizations": {
         "vscode": {
